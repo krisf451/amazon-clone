@@ -6,13 +6,14 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { useStateValue } from "./StateProvider";
 
 function Header() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
   return (
     <nav className="header">
       <Link to="/">
         <img
           className="header__logo"
           src="https://i.gyazo.com/409db5e43ff44c87d9ff9327f31aa1d3.png"
+          alt="header logo"
         />
       </Link>
 

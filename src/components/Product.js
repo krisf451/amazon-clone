@@ -28,8 +28,8 @@ function Product({ id, title, image, price, rating }) {
         <div className="product__rating">
           {Array(rating)
             .fill()
-            .map(_ => {
-              return <p>⭐️</p>;
+            .map((_, index) => {
+              return <p key={index}>⭐️</p>;
             })}
         </div>
       </div>
